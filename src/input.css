@@ -29,7 +29,7 @@ html {
     @apply text-white mt-8 flex flex-col items-center hover:text-white/80 transition duration-300;
   }
   .topBorder {
-    @apply flex w-[20rem] md:w-[60rem] xl:w-[110rem] items-center justify-center border-t border-slate-50/5 pt-16 mx-16;
+    @apply flex w-[20rem] md:w-[20rem] xl:w-[20rem] items-center justify-center border-t border-slate-50/5 pt-16 mx-16;
   }
   .largetest {
     @apply sm:w-[30rem] md:w-[60rem] xl:w-[70rem];
