@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5000" height="1024" viewBox="0 0 5000 1024">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 800px;
+        font-family: "Century Gothic";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="Preenchimento_de_Cor_1" data-name="Preenchimento de Cor 1" class="cls-1" d="M1832.51,951.514V313.328H1586.03V-0.033H2042.7V74.486H1660.55V238.809h246.48V951.514h-74.52Zm210.19,74.516V238.809h74.51V1026.03H2042.7Zm141.39-74.516h74.52V313.328h227.38V-0.033H2117.21V74.486h294.26V238.809H2184.09V951.514Z"/>
+  <text id="TEX" class="cls-2" x="118.385" y="799.433">TEX</text>
+  <text id="CODE" class="cls-2" x="2637.385" y="799.433">CODE</text>
+</svg>

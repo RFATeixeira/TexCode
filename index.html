@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="shortcut icon" href="./src/img/ico.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d12e85fc0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tex Code</title>
+  </head>
+  <body
+    style="
+      background-image: url(./src/img/background.svg);
+      max-height: max-content;
+    "
+    class="w-full bg-cover mb-20 bg-repeat-y bg-center"
+  >
+    <header class="p-10 w-full fixed backdrop-blur-sm z-10">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex flex-row items-center">
+          <img
+            src="./src/img/texcode_logotype.svg"
+            alt="LogoTipo"
+            class="w-40 drop-shadow-[0_1px_1px_rgba(0,0,0,1)]"
+          />
+          <div
+            class="responsive h-14 border-l border-r border-slate-50/5 ml-12"
+          ></div>
+          <nav class="responsive">
+            <ul class="ml-12 flex space-x-12">
+              <li>
+                <a href="#frontPage" class="btnHeader">INICIO</a>
+              </li>
+              <li>
+                <a href="#projects" class="btnHeader">PROJETOS</a>
+              </li>
+              <li>
+                <a href="#about" class="btnHeader">SOBRE</a>
+              </li>
+              <li>
+                <a href="#media" class="btnHeader">MIDIAS</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="responsive">
+          <button class="btnBlue p-2 px-6 text-xl">
+            <a href="#contact">CONTATO</a>
+          </button>
+        </div>
+        <div class="contents lg:hidden xl:hidden">
+          <button
+            id="menuBtn"
+            type="button"
+            class="text-white bg-brandblue items-center flex justify-center w-10 h-10 rounded-full text-xl cursor-pointer"
+          >
+            <a class="fa-solid fa-bars"></a>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="hidden">
+        <div class="px-2 pt-4 pd-3 sm:px-3 flex flex-col items-end">
+          <a
+            href="#frontPage"
+            class="text-white block px-3 py-2 rounded-md tex-base font-medium"
+            >INICIO</a
+          >
+          <a
+            href="#projects"
+            class="text-white block px-3 py-2 rounded-md tex-base font-medium"
+            >PROJETOS</a
+          >
+          <a
+            href="#about"
+            class="text-white block px-3 py-2 rounded-md tex-base font-medium"
+            >SOBRE</a
+          >
+          <a
+            href="#media"
+            class="text-white block px-3 py-2 rounded-md tex-base font-medium"
+            >MIDIAS</a
+          >
+          <a
+            href="#contact"
+            class="text-white block px-3 py-2 rounded-md tex-base font-medium"
+            >CONTATO</a
+          >
+        </div>
+      </div>
+    </header>
+    <!--header-->
+
+    <section id="frontPage" class="pt-36 w-full">
+      <div
+        class="pb-20 w-full xl:h-[52rem] flex flex-col md:flex-col lg:flex-row xl:flex-row justify-evenly items-center"
+      >
+        <div
+          class="flex flex-row justify-center md:justify-center lg:justify-end w-full"
+        >
+          <div
+            class="w-[24rem] md:w-[36rem] xl:w-[38rem] flex flex-col text-white text-center lg:text-start items-center lg:items-start"
+          >
+            <span class="text-5xl font-semibold"
+              >Página dedicada aos projetos de
+              <a href="#about" class="text-brandblue2">Raphael Teixeira</a
+              >.</span
+            >
+            <span class="mt-2 text-xl"
+              >Nesta página você pode conferir todos os projetos desenvolvidos
+              por <a href="#about">Raphael Teixeira</a>.</span
+            >
+            <div class="flex flex-row gap-10 mt-6">
+              <button class="btnBlue p-4 px-8 text-xl">
+                <a href="#contact">CONTATO</a>
+              </button>
+              <button class="btnGray p-4 px-8 text-xl">
+                <a href="#projects">PROJETOS</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-center w-full overflow-clip mt-12 md:mt-12 lg:mt-0 xl:mt-0"
+        >
+          <img
+            src="./src/img/Apple Computers.png"
+            alt="Computador"
+            class="xl:translate-x-80"
+          />
+        </div>
+      </div>
+    </section>
+    <!--Front Page-->
+    <section
+      id="projects"
+      class="w-full flex flex-col justify-center items-center"
+    >
+      <div class="topBorder">
+        <span class="text-white text-4xl font-semibold">Projetos</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
+        <div class="flex items-center justify-center mt-20 text-white">
+          <div class="w-96 rounded-xl overflow-hidden bg-slate-950/50">
+            <div class="flex flex-col justify-between items-center">
+              <div class="overflow-hidden">
+                <img
+                  class="w-full hover:scale-110 transition duration-300"
+                  src="./src/img/CodeLab/Blog CodeLab.png"
+                  alt="Blog CodeLab"
+                />
+              </div>
+              <span class="text-2xl mt-4">Blog CodeLab</span>
+            </div>
+            <div class="flex flex-row justify-around items-center mt-5 mb-5">
+              <button class="btnBlue px-6 p-2 text-base">
+                <a
+                  href="https://blog-codelab-rfateixeira.netlify.app/"
+                  target="_blank"
+                >
+                  Demo
+                </a>
+              </button>
+              <button class="btnGray px-6 p-2 text-base">
+                <a
+                  href="https://github.com/RFATeixeira/CodeLab/tree/main/Blog%20CodeLab"
+                  target="_blank"
+                >
+                  Repositório</a
+                >
+              </button>
+              <button class="btnBlue px-6 p-2 text-base">
+                <a
+                  href="https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=0-1&t=9ZKYzuv3tXuSME3P-0"
+                  target="_blank"
+                >
+                  Figma</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-20 text-white">
+          <div class="w-96 rounded-xl overflow-hidden bg-slate-950/50">
+            <div class="flex flex-col justify-between items-center">
+              <div class="overflow-hidden">
+                <img
+                  class="w-full hover:scale-110 transition duration-300"
+                  src="./src/img/CodeLab/JordanShoes Store.png"
+                  alt="Blog CodeLab"
+                />
+              </div>
+              <span class="text-2xl mt-4">JordanShoes Store</span>
+            </div>
+            <div class="flex flex-row justify-around items-center mt-5 mb-5">
+              <button class="btnGray px-6 p-2 text-base">
+                <a
+                  href="https://jordanshoesstore-codelab-rfateixeira.netlify.app/"
+                  target="_blank"
+                >
+                  Demo</a
+                >
+              </button>
+              <button class="btnBlue px-6 p-2 text-base">
+                <a
+                  href="https://github.com/RFATeixeira/CodeLab/tree/main/JordanShoes%20CodeLab"
+                  target="_blank"
+                >
+                  Repositório</a
+                >
+              </button>
+              <button class="btnGray px-6 p-2 text-base">
+                <a
+                  href="https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=1883-2&t=Yv5ZKPCt1Eybo95b-0"
+                  target="_blank"
+                >
+                  Figma</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-20 text-white">
+          <div class="w-96 rounded-xl overflow-hidden bg-slate-950/50">
+            <div class="flex flex-col justify-between items-center">
+              <div class="overflow-hidden">
+                <img
+                  class="w-full hover:scale-110 transition duration-300"
+                  src="./src/img/CodeLab/TechBlog.png"
+                  alt="Blog CodeLab"
+                />
+              </div>
+              <span class="text-2xl mt-4">TechBlog</span>
+            </div>
+            <div class="flex flex-row justify-around items-center mt-5 mb-5">
+              <button class="btnBlue px-6 p-2 text-base">
+                <a
+                  href="https://techblog-codelab-rfateixeira.netlify.app/"
+                  target="_blank"
+                >
+                  Demo</a
+                >
+              </button>
+              <button class="btnGray px-6 p-2 text-base">
+                <a
+                  href="https://github.com/RFATeixeira/CodeLab/tree/main/TechBlog%20CodeLab"
+                  target="_blank"
+                >
+                  Repositório</a
+                >
+              </button>
+              <button class="btnBlue px-6 p-2 text-base">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=3725-2&t=Yv5ZKPCt1Eybo95b-0"
+                >
+                  Figma</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Cards-->
+    <section
+      id="about"
+      class="mt-20 w-full flex flex-col justify-center items-center"
+    >
+      <div class="topBorder">
+        <div class="flex flex-col items-center">
+          <span class="text-white text-4xl font-semibold">Sobre</span>
+          <span class="text-white text-2xl mt-4 largetest text-center"
+            >Seja Bem vindo a página de projetos de Raphael Teixeira, aqui você
+            poderá ver e testar todos os projeto desenvolvidos por tal.</span
+          >
+        </div>
+      </div>
+      <div class="flex largetest items-center justify-center">
+        <div class="flex flex-col items-start largetest2 mt-8">
+          <span class="text-white text-3xl font-semibold mt-8"
+            >Quem é Raphael Teixeira?</span
+          >
+          <span class="text-white text-2xl mt-6"
+            >Um jovem estudante de Sistemas de Informação na UNIPAR
+            (Universidade Paranaense) que está em busca de aperfeiçoamente para
+            ingressar no mercado de trabalho como Developer FrontEnd.</span
+          >
+          <span class="text-white text-3xl font-semibold mt-8"
+            >Como faz para se aperfeiçoar?</span
+          >
+          <span class="text-white text-2xl mt-6"
+            >Através do próprio curso de S.I, de cursos online como o CodeLab do
+            IuriCode entre outros no Youtube e o mais importante, colocando em
+            prática todos os aprendizados, como esta própria página.</span
+          >
+          <span class="text-white text-3xl font-semibold mt-8"
+            >Qual o objetivo?</span
+          >
+          <span class="text-white text-2xl mt-6"
+            >Melhorar a qualidade de vida em um trabalho que ama.</span
+          >
+        </div>
+      </div>
+    </section>
+    <!--About-->
+    <section
+      id="contact"
+      class="mt-20 w-full flex flex-col justify-center items-center"
+    >
+      <div class="topBorder">
+        <div class="flex flex-col items-center">
+          <span class="text-white text-4xl font-semibold">Contato</span>
+          <span class="text-white text-2xl mt-4 largetest text-center"
+            >Contate para mais infomações</span
+          >
+        </div>
+      </div>
+      <div class="flex largetest items-center justify-center">
+        <div class="flex flex-col items-start largetest2 mt-8">
+          <span class="text-white text-3xl font-semibold mt-8"
+            ><a href="https://wa.me/5544998035684">WhatsApp</a></span
+          >
+          <span class="text-white text-2xl mt-6"
+            >Me chame no whats para tirar duvidas, realizar propostas ou só para
+            ter uma conversa, você escolhe!</span
+          >
+          <span class="text-white text-2xl mt-6"
+            >Ou se preferir pode me chamar em alguma mídia social!</span
+          >
+        </div>
+      </div>
+    </section>
+    <!--Contact-->
+    <section
+      id="media"
+      class="mt-20 w-full flex flex-col justify-center items-center"
+    >
+      <div class="topBorder">
+        <div class="flex flex-col items-center">
+          <span class="text-white text-4xl font-semibold">Mídias Sociais</span>
+          <span class="text-white text-2xl mt-4 largetest text-center"
+            >Fique a vontade para seguir ou adicionar em qualquer mídia</span
+          >
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <div
+          class="grid grid-cols-3 md:grid-cols-6 xl:grid-cols-6 items-start mt-8 gap-10"
+        >
+          <div class="socialIcons">
+            <a
+              href="https://www.instagram.com/rfateixeira/"
+              target="_blank"
+              class="fa-brands text-6xl fa-instagram"
+            ></a>
+            <span>Instagram</span>
+          </div>
+          <div class="socialIcons">
+            <a
+              href="https://t.me/rfateixeira"
+              target="_blank"
+              class="fa-brands fa-telegram text-6xl"
+            ></a>
+            <span>Telegram</span>
+          </div>
+          <div class="socialIcons">
+            <a
+              href="https://x.com/RFATeixeira_"
+              target="_blank"
+              class="fa-brands fa-x-twitter text-6xl"
+            ></a>
+            <span>Twitter</span>
+          </div>
+          <div class="socialIcons">
+            <a
+              href="http://discordapp.com/users/230079074243051520"
+              target="_blank"
+              class="fa-brands fa-discord text-6xl"
+            ></a>
+            <span>Discord</span>
+          </div>
+          <div class="socialIcons">
+            <a
+              href="https://www.linkedin.com/in/raphael-teixeira-703b93236/"
+              target="_blank"
+              class="fa-brands fa-linkedin-in text-6xl"
+            ></a>
+            <span>Linkedin</span>
+          </div>
+          <div class="socialIcons">
+            <a
+              href="https://github.com/RFATeixeira"
+              target="_blank"
+              class="fa-brands fa-github text-6xl"
+            ></a>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Social Medias-->
+  </body>
+  <script src="./src/script.js"></script>
+</html>

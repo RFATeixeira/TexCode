@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .responsive {
+    @apply hidden md:hidden lg:contents xl:contents 2xl:contents;
+  }
+  .btnHeader {
+    @apply text-white text-lg hover:text-slate-300 transition duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,1)];
+  }
+  .btnBlue {
+    @apply rounded-full bg-brandblue text-white  hover:bg-brandblue3 transition duration-300;
+  }
+  .btnGray {
+    @apply rounded-full bg-blue-950 text-white hover:bg-blue-950/80 transition duration-300;
+  }
+  .socialIcons {
+    @apply text-white mt-8 flex flex-col items-center hover:text-white/80 transition duration-300;
+  }
+  .topBorder {
+    @apply flex w-[20rem] md:w-[60rem] xl:w-[110rem] items-center justify-center border-t border-slate-50/5 pt-16 mx-16;
+  }
+  .largetest {
+    @apply sm:w-[30rem] md:w-[60rem] xl:w-[70rem];
+  }
+  .largetest2 {
+    @apply w-[22rem] md:w-[60rem] xl:w-[70rem];
+  }
+}
